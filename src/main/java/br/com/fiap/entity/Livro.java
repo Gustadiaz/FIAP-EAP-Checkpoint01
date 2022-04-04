@@ -22,11 +22,11 @@ public class Livro implements Serializable {
 
   
 
-    public Livro(String titulo, String autor, Integer edicao, LocalDate dataPublicacao) {
+    public Livro(String titulo, String autor, Integer edicao, LocalDate anoPublicacao) {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.edicao = edicao;
-		this.anoPublicacao = dataPublicacao;
+		this.anoPublicacao = anoPublicacao;
 		
 	}
 
