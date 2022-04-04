@@ -26,7 +26,7 @@ public class Livro implements Serializable {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.edicao = edicao;
-		this.dataPublicacao = dataPublicacao;
+		this.anoPublicacao = dataPublicacao;
 		
 	}
 
@@ -44,7 +44,7 @@ public class Livro implements Serializable {
     private Integer edicao;
 
     @Column(name = "dt_publicacao")
-    private LocalDate dataPublicacao;
+    private LocalDate anoPublicacao;
 
     @Column(name = "st_ativo")
     private Boolean ativo;
@@ -88,12 +88,12 @@ public class Livro implements Serializable {
         this.edicao = edicao;
     }
 
-    public LocalDate getDataPublicacao() {
-        return dataPublicacao;
+    public LocalDate getAnoPublicacao() {
+        return anoPublicacao;
     }
 
-    public void setDataPublicacao(LocalDate dataPublicacao) {
-        this.dataPublicacao = dataPublicacao;
+    public void setDataPublicacao(LocalDate anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
     }
 
     public Boolean getAtivo() {
